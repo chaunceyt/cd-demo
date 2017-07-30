@@ -21,7 +21,7 @@ func TestIntegration(t *testing.T) {
 		resp := new(http.Response)
 
 		for l := 0; l < 10; l++ {
-			resp, err = http.Get("http://" + os.Getenv("SERVER") + ":8080/" + x.question)
+			resp, err = http.Get("http://" + os.Getenv("SERVER") + ":8081/" + x.question)
 			if err == nil {
 				break
 			}
